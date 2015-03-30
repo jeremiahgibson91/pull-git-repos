@@ -1,5 +1,5 @@
 # #!/usr/local/bin/python3
-__author__ = 'Jeremiahgibson91 & James & Jarred(thang1thang2)'
+__author__ = 'Jeremiahgibson91 & James & Jared(thang1thang2)'
 # Windows ONLY (SORRY OTHERS - USE WINDOWS - TOO LAZY)
 # Pull students repositories
 #
@@ -17,8 +17,8 @@ import github3
 import subprocess
 import shutil
 
-login = 'thang1thang2:class_g15'
-path = '/Volumes/Mavericks/Users/jaredweakly/Documents/Classes/Grading/students'
+login = 'username:password'
+path = 'path/to/file/placement'
 
 if __name__ == '__main__':
     if os.path.exists(path):
