@@ -29,8 +29,8 @@ if __name__ == '__main__':
     g = github3.login('thang1thang2', 'class_g15')
 
     for repo in g.iter_repos(type='collaborator'):
-        yolo = repo.clone_url.split('//')
-        subprocess.call(['git', 'clone',yolo[0]+'//'+login+'@'+yolo[1]])
+        repo_parts = repo.clone_url.split('//')
+        subprocess.call(['git', 'clone',repo_parts[0]+'//'+login+'@'+repo_parts[1]])
         #subprocess.call(['C:\\Program Files (x86)\\Git\\bin\\git', 'clone', repo.clone_url])
         # If windows => path; else assume sane unix path
     print('DONE')
