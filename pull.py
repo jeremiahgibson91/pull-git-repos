@@ -1,5 +1,5 @@
 # #!/usr/local/bin/python3
-__author__ = 'Jeremiahgibson91 & James'
+__author__ = 'Jeremiahgibson91 & James & Jarred(thang1thang2)'
 # Windows ONLY (SORRY OTHERS - USE WINDOWS - TOO LAZY)
 # Pull students repositories
 #
