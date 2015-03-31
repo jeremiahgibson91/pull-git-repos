@@ -1,4 +1,4 @@
-# #!/usr/local/bin/python3
+#!/usr/local/bin/python3
 __author__ = 'Jeremiahgibson91 & James & Jared(thang1thang2)'
 # Windows ONLY (SORRY OTHERS - USE WINDOWS - TOO LAZY)
 # Pull students repositories
@@ -17,8 +17,9 @@ import github3
 import subprocess
 import shutil
 
-login = 'username:password'
-path = 'path/to/file/placement'
+# username, password
+login = ('testpersons','t3stpersons')
+path = 'students'
 
 if __name__ == '__main__':
     if os.path.exists(path):
@@ -26,11 +27,11 @@ if __name__ == '__main__':
     os.mkdir(path)
     os.chdir(path)
 
-    g = github3.login('thang1thang2', 'class_g15')
+    g = github3.login(login[0], login[1])
 
     for repo in g.iter_repos(type='collaborator'):
         repo_parts = repo.clone_url.split('//')
-        subprocess.call(['git', 'clone',repo_parts[0]+'//'+login+'@'+repo_parts[1]])
+        subprocess.call(['git', 'clone',repo_parts[0]+'//'+login[0]+login[1]+'@'+repo_parts[1]])
         #subprocess.call(['C:\\Program Files (x86)\\Git\\bin\\git', 'clone', repo.clone_url])
         # If windows => path; else assume sane unix path
     print('DONE')
