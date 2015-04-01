@@ -18,7 +18,7 @@ import subprocess
 import shutil
 
 # username, password
-login = ('testpersons','t3stpersons')
+login = ['thang1thang2','class_g15']
 path = 'students'
 
 if __name__ == '__main__':
@@ -31,7 +31,8 @@ if __name__ == '__main__':
 
     for repo in g.iter_repos(type='collaborator'):
         repo_parts = repo.clone_url.split('//')
-        subprocess.call(['git', 'clone',repo_parts[0]+'//'+login[0]+login[1]+'@'+repo_parts[1]])
-        #subprocess.call(['C:\\Program Files (x86)\\Git\\bin\\git', 'clone', repo.clone_url])
+        url=repo_parts[0]+'//'+login[0]+':'+login[1]+'@'+repo_parts[1]
+        #print(url)
+        subprocess.call(['git', 'clone',url])
         # If windows => path; else assume sane unix path
     print('DONE')
