@@ -8,6 +8,11 @@ __author__ = 'Jeremiahgibson91 & James & Jared(thang1thang2)'
 # Open CMD as administrator
 # $ C:\Python34\scripts\pip install github3.py
 #
+# Make sure to add to your path (64-bit PC):
+# C:\Program Files (x86)\Git\bin
+# 32-bit PC's
+# C:\Program Files\Git\bin
+#
 # --- RUN IT ---
 # Open CMD
 # $ C:\Python34\python C:\PATH\TO\SCRIPT\pull.py
