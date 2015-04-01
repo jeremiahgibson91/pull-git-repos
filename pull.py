@@ -23,7 +23,7 @@ import subprocess
 import shutil
 
 # username, password
-login = ['thang1thang2','class_g15']
+login = ['username','password']
 path = 'students'
 
 if __name__ == '__main__':
