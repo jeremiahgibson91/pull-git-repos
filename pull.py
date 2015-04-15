@@ -25,7 +25,7 @@ import shutil
 # username, password
 login = ['username','password']
 path = 'students'
-
+#check this out
 if __name__ == '__main__':
     if os.path.exists(path):
         shutil.rmtree(path)
